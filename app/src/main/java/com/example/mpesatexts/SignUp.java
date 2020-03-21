@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.button.MaterialButton;
@@ -15,7 +16,7 @@ public class SignUp extends AppCompatActivity {
     public TextInputEditText emailTx, passwordTx, confirmTx;
     public MaterialButton btnSignup;
     public String email, password, confirmPassword;
-    LinearLayout linearLayoutLogin;
+    TextView tXLogin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +26,7 @@ public class SignUp extends AppCompatActivity {
         emailTx =  findViewById(R.id.ed_email);
         passwordTx =  findViewById(R.id.ed_pass);
         confirmTx =  findViewById(R.id.ed_confirmpass);
-        linearLayoutLogin =  findViewById(R.id.layoutSignup);
+        tXLogin =  findViewById(R.id.link_login);
         btnSignup = findViewById(R.id.btn_signup);
 
         btnSignup.setOnClickListener(new View.OnClickListener() {
@@ -50,10 +51,10 @@ public class SignUp extends AppCompatActivity {
             }
         });
 
-        linearLayoutLogin.setOnClickListener(new View.OnClickListener() {
+        tXLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent =  new Intent(SignUp.this,SignUp.class);
+                Intent intent =  new Intent(SignUp.this,Login.class);
                 startActivity(intent);
                 finish();
             }

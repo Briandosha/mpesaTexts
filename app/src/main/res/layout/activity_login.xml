@@ -101,6 +101,7 @@
                             android:padding="15dp"
                             app:cornerRadius="0dp"
                             android:textColor="@android:color/white"
+                            android:fontFamily="@font/raleway_medium"
                             android:layout_width="match_parent"
                             android:backgroundTint="@color/colorPrimaryDark"
                             android:layout_height="wrap_content"
@@ -121,15 +122,14 @@
                         </LinearLayout>
 
 
-
                         <LinearLayout
                             android:id="@+id/layoutSignup"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal"
+                            android:layout_marginTop="25dp"
                             android:gravity="center"
-                            android:padding="10dp"
-                            android:layout_marginTop="25dp">
+                            android:orientation="horizontal"
+                            android:padding="10dp">
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -141,16 +141,17 @@
                                 android:textStyle="bold"
                                 android:visibility="visible"
                                 app:fontFamily="@font/raleway_medium" />
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:visibility="visible"
-                                android:textAllCaps="false"
-                                android:textStyle="bold"
                                 android:fontFamily="@font/raleway_medium"
+                                android:text="Signup "
+                                android:textAllCaps="false"
                                 android:textColor="@color/colorPrimary"
                                 android:textSize="16sp"
-                                android:text="Signup " />
+                                android:textStyle="bold"
+                                android:visibility="visible" />
 
 
                         </LinearLayout>
